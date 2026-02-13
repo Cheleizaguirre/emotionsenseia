@@ -1,20 +1,87 @@
-# Proyecto de Detección de Emociones
+EmotionSense AI
 
-Este proyecto utiliza OpenCV, FER y una interfaz gráfica basada en `ttkbootstrap` para detectar emociones en tiempo real desde la cámara.
+Real-time facial emotion recognition desktop application built with Python 3.11, OpenCV, and FER (MTCNN). The system captures live video from a webcam, detects faces, and classifies emotions with confidence scoring and buffered smoothing for improved stability.
 
-## Instalación
+🎯 Purpose
 
-1. Clona este repositorio:
+Detect human emotions in real time using computer vision and AI.
 
-2. Crea un entorno virtual:
+Provide an intuitive graphical interface for live visualization.
 
-python -m venv venv
+Improve accuracy through confidence thresholds and emotion buffering.
 
-3. Activa el entorno:
+Track emotion history for short-term behavioral analysis.
 
-venv\Scripts\activate
+✨ Key Features
 
-4. pip install -r requirements.txt
+Real-time face detection via webcam.
 
-5. Ejecuta el programa:
+Emotion classification (happy, sad, angry, fear, surprise, neutral, disgust).
 
+Confidence percentage display.
+
+Buffered emotion smoothing to reduce flickering results.
+
+Live emotion sidebar indicator.
+
+Emotion history log with timestamps.
+
+Modern UI built with ttkbootstrap.
+
+🛠️ Stack
+Layer	Technology
+Language	Python 3.11
+Computer Vision	OpenCV
+Emotion Recognition	FER + MTCNN
+GUI Framework	Tkinter + ttkbootstrap
+Image Processing	PIL (Pillow)
+Data Handling	NumPy
+⚙️ Local Installation (Developers)
+# 1. Clone repository
+$ git clone https://github.com/yourusername/emotionsenseai.git
+$ cd emotionsenseai
+
+# 2. Create virtual environment (recommended)
+$ python -m venv venv
+$ source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+$ pip install -r requirements.txt
+
+# 4. Run application
+$ python main.py
+
+
+Note: Make sure your device has a working webcam. Some systems may require additional OpenCV or camera permissions.
+
+🧠 How It Works
+
+The webcam captures live frames.
+
+Frames are processed using OpenCV.
+
+FER with MTCNN detects faces and predicts emotion probabilities.
+
+A confidence threshold filters weak predictions.
+
+A small emotion buffer determines the most frequent emotion to improve stability.
+
+Results are displayed in the interface with percentage and history log.
+
+🚀 Future Improvements
+
+Export emotion history to CSV.
+
+Multi-face simultaneous tracking.
+
+Cloud-based emotion analytics dashboard.
+
+Model customization and retraining.
+
+🤝 Contributing
+
+Fork the repository and create a new branch (feature/YourFeature).
+
+Commit changes with clear messages.
+
+Open a Pull Request describing your improvements.
