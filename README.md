@@ -60,7 +60,7 @@ $ python main.py
 
 ---
 
-##🧠 How It Works
+## 🧠 How It Works
 
 1. The webcam captures live frames.
 2. Frames are processed using OpenCV.
